@@ -5,7 +5,7 @@ import { ProgressViewIOSComponent, StyleSheet,Text, TouchableOpacity, View } fro
 export default function Botao(props){
     return (
     <View style={styles.vwNumber}>
-        <TouchableOpacity onPress={()=>props.logicCalc()} style={styles.toNumbers}>
+        <TouchableOpacity onPress={()=>props.logicCalc(props.number)} style={styles.toNumbers}>
         <Text style={styles.txtNumber}>{props.number}</Text>
         </TouchableOpacity>
     </View>
@@ -14,7 +14,7 @@ export default function Botao(props){
 
 const styles=StyleSheet.create({
     vwNumber:{
-        backgroundColor:'black', 
+        backgroundColor:'rgb(1, 89, 16)', 
         borderColor:'white',
         borderWidth:1,
         width:'33.3%',
